@@ -48,7 +48,8 @@ impl Registry {
 
         let mut to_remove = vec![];
 
-        for (i, timer) in timers.iter_mut().enumerate() {
+        let timers_iter = timers.iter_mut().enumerate();
+        for (i, timer) in timers_iter {
             timer.interval = timer.interval.sub(Duration::from_secs(1));
             if timer.interval.is_zero() {
                 to_remove.push(i);
