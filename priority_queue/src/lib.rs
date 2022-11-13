@@ -43,7 +43,7 @@ impl Registry {
     pub fn expire_timers(&self, current_time: Instant) {
         let mut timers = self.timers.lock().unwrap();
 
-        while let Some(Reverse(timer)) = timers.peek() && timer.expires_at <= current_time{
+        while let Some(Reverse(timer)) = timers.peek() && timer.expires_at <= current_time {
           let Reverse(timer) = timers.pop().unwrap();
           (timer.expire_action)();
         }

@@ -2,5 +2,6 @@
 
 members = [
   "straightforward",
-  "priority_queue"
+  "priority_queue",
+  "timing_wheels"
 ]
