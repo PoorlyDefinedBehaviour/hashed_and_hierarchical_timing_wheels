@@ -3,5 +3,6 @@
 members = [
   "straightforward",
   "priority_queue",
-  "timing_wheels"
+  "timing_wheels",
+  "hash_table_with_sorted_timers_in_each_bucket"
 ]
