@@ -3,5 +3,9 @@
 version = 3
 
 [[package]]
+name = "priority_queue"
+version = "0.1.0"
+
+[[package]]
 name = "straightforward"
 version = "0.1.0"
