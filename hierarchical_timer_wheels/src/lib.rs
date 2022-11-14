@@ -144,9 +144,9 @@ impl<T> Iterator for IterMut<T> {
 impl<T> Drop for DoublyLinkedList<T> {
     fn drop(&mut self) {
         unsafe {
-            let mut current = (*self.dummy_head).next;
+            let mut current = self.dummy_head;
 
-            while current != self.dummy_tail {
+            while !current.is_null() {
                 let node = current;
                 current = (*current).next;
                 let _ = Box::from_raw(node);
