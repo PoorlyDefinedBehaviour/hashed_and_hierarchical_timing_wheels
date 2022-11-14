@@ -7,6 +7,10 @@ name = "hash_table_with_sorted_timers_in_each_bucket"
 version = "0.1.0"
 
 [[package]]
+name = "hierarchical_timer_wheels"
+version = "0.1.0"
+
+[[package]]
 name = "priority_queue"
 version = "0.1.0"
 
